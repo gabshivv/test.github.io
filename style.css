@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+img{
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float:left;
+}
+
+nav {
+    height: 80px;
+    border-bottom: 2px;
+    border-bottom-color: blue;
+    display: flex;
+    margin-right: 30px ;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px cal((100vw - 1300px)/2);
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 24px;
+}
+
+.content-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0px 2px;
+    margin-left: 50px;
+}
+
+.content-align h1{
+    margin-bottom: 16px;
+    margin-left: 20px;
+    font-size: 55px;
+}
+
+.content-align p{
+    margin-bottom: 32px;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.store-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: none;
+}
+
+.bg-image{
+    background-image: url(BG.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.PPT{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    width: 100%;
+    transition: all 0.20s ease;
+}
+
+.images input{
+    display: none;
+}
+
+.slider {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+
+.slider label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid white 2px;
+    cursor: pointer;
+    transition: all 0.20s ease;
+    margin: 5px;
+}
+
+.slider label:hover {background: #E8202B;}
+
+#pg1:checked ~ .P1 {
+    margin-left: 0%;
+}
+
+#pg2:checked ~ .P2  {
+    margin-left: -110%;
+}
+
+#pg3:checked ~ .P3  {
+    margin-left: -220%;
+}
+
+#pg4:checked ~ .P4 {
+    margin-left: -330%;
+}
+
